@@ -1,119 +1,184 @@
-
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.ttf');
+    src: url('../Roboto/Roboto-Regular.ttf');
  }
 
-body {
-    background-image: url('LeafMed.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body{
     margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    color: #333;
+    font-family: Roboto;
 }
-
-header {
-    background-color: rgba(44, 122, 45, 0.8);
+header{
     display: flex;
-    justify-content: flex-end;
-    padding: 10px 20px;
-}
-
-header a {
+    flex-direction: row;
+    background-color: rgb(25, 88, 35);
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8% 0 1%;
+ }
+ 
+ header a {
+    margin: 0 8px 0 8px;
+ }
+ 
+ header h1{
+    font-size: 50px;
     color: white;
-    margin-left: 20px;
-    text-decoration: none;
+ }
+ 
+ header div{
+    display:flex;
+    height: 100%;
+    align-items: center;
+ }
+
+main{
+    display: flex;
+    background-image: url("../Images/LeafMed.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(194, 251, 173);
+    margin: 0;
 }
 
-main.formulario {
-    background-color: #C2FBAD;
-    padding: 20px;
+.pay{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(194, 251, 173);
+    height: 700px;
+    width: 600px;
+    padding: 10px;
+    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.pay h3{
+    font-weight: normal;
+    font-size: 25px;
+    color: rgb(0, 66, 11);
+}
+
+.pay p{
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.logo{
+    height: 80%;
+    border-radius: 50%;
+    clip-path: inset(0 5px 0 5px);
+}
+
+.info{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 15px;
-    flex: 1 0 auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 20px;
 }
 
-h1, h3 {
-    color: #2c7a2d;
-    margin-top: 0;
-}
-
-p {
-    color: #555;
-    margin: 10px 0;
-}
-
-label {
+.info-child{
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    width: 100%;
 }
 
-input[type="text"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-top: 5px;
-    width: 250px;
-    margin-right: 10px;
-    flex-grow: 1;
-    box-sizing: border-box;
-}
-
-input[type="checkbox"] {
+#nombre{
     margin-right: 5px;
 }
 
-a {
-    color: #2c7a2d;
-    text-decoration: none;
-    padding: 10px 15px;
-    background-color: #C2FBAD;
-    border-radius: 5px;
+#apellido{
+    margin-left: 5px;
 }
 
-a:hover {
-    text-decoration: underline;
+#pseImg{
+    width: 100px;
+    height: 40px;
 }
 
-footer {
-    background-color: rgb(194, 251, 173);
-    color: #000000;
-    text-align: center;
-    padding: 10px;
+.info input{
+    border-radius: 30px;
+    background-color: 	rgb(130, 194, 136);
+    border-width: 0;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    padding-left: 10px;
+    color: black;
+}
+
+.mPago{
     display: flex;
     align-items: center;
-    flex-shrink: 0; /* Esto evita que el footer se encoja */
+    justify-content: space-around;
+    width: 55%;
+}
+
+.mPago input{
+    display: flex;
+    align-items: center;
     justify-content: center;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(50, 222, 67);
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-footer h4 {
-    color: #2c7a2d;
-    font-size: 1.2em;
+.mPago input:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    color: white;
+    display: none;
 }
 
-footer p {
-    margin: 5px 0;
+.mPago input:hover{
+    background-color: rgb(70, 242, 87);
 }
 
-footer div {
-    flex: 1;
-    padding: 10px;
+.mPago input:checked{
+    background-color: rgb(20, 192, 37);
 }
 
-footer a {
-    color: rgb(25, 88, 35);
+.mPago input:checked:after{
+    background-color: rgb(20, 192, 37);
+    display: block;
+}
+
+.mPago label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pse{
+    display: flex;
+    align-items: center;
+}
+.recurso{
+    margin: 0 2% 0 2%;
+}
+
+.recurso p{
+    color:rgb(25, 88, 35)
+}
+
+a {
     text-decoration: none;
-    margin: 2px 30px;
-    display: inline-block;
+    background-color: rgb(25, 88, 35);
+    padding: 2px 25px 2px 25px;
+    border-radius: 20px;
+    color: white;
+    border-style: solid;
+    border-color: rgb(50, 222, 67);
+    border-width: 2px;
 }
