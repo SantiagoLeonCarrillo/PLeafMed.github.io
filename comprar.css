@@ -1,110 +1,96 @@
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../Roboto/Roboto-Regular.ttf');
- }
-
-body{
-    font-family: Roboto;
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('LeafMed.jpg');
+    background-size: cover; /* Esto hará que la imagen cubra todo el espacio disponible */
+    background-repeat: no-repeat; /* Esto evitará que la imagen se repita */
+    background-attachment: fixed; /* Esto hará que la imagen de fondo sea fija mientras se desplaza la página */
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
-header{
+
+header {
+    background-color: #2c7a2d;
     display: flex;
-    flex-direction: row;
-    background-color: rgb(25, 88, 35);
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8% 0 1%;
- }
- 
- header a {
-    margin: 0 8px 0 8px;
- }
- 
- header h1{
-    font-size: 50px;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+header a {
     color: white;
- }
- 
- header div{
-    display:flex;
-    height: 100%;
-    align-items: center;
- }
-main{
-    display: flex;
-    background-image: url("../Images/LeafMed.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 800px;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-}
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(194, 251, 173);
-    margin: 0;
+    margin-left: 20px;
+    text-decoration: none;
 }
 
-.buy{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(194, 251, 173);
-    height: 500px;
-    width: 700px;
-    padding: 0;
-    border-radius: 30px;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 50px;
-    justify-content: center;
-    align-items: center;
-}
-.buy img{
-    height: 300px;
-}
-.buy h1{
-    font-weight: normal;
-    font-size: 25px;
-    color: rgb(0, 66, 11);
-}
-
-.buy p{
-    font-weight: normal;
-    font-size: 25px;
-}
-.pago{
+main.formulario {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-.recurso{
-    margin: 0 2% 0 2%;
+    background-color: #C2FBAD; /* Color de fondo para la caja */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    margin: 20px auto; /* Margen superior e inferior y centrado horizontal */
+    max-width: 800px; /* Anchura máxima */
+    width: 90%; /* Utilizará el 90% del ancho disponible, pero no excederá los 800px */
 }
 
-.recurso p{
-    color:rgb(25, 88, 35)
+h1, h3 {
+    color: #2c7a2d;
+    margin-top: 0;
 }
-.logo{
-    height: 90%;
-    border-radius: 50%;
-    margin: 0 0 0 10px;
-    clip-path: inset(0 5px 0 5px);
- }
+
+p {
+    color: #555;
+    margin: 10px 0;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    width: 250px;
+    margin-right: 10px;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
 a {
+    color: #2c7a2d;
     text-decoration: none;
-    background-color: rgb(25, 88, 35);
-    padding: 2px 25px 2px 25px;
-    border-radius: 20px;
-    color: white;
-    border-style: solid;
-    border-color: rgb(50, 222, 67);
-    border-width: 2px;
+    padding: 10px 15px;
+    background-color: #C2FBAD;
+    border-radius: 5px;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(194, 251, 173);
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: rgb(25, 88, 35);
+    text-decoration: none;
+    margin: 2px 30px;
+    display: inline-block;
+}
+
