@@ -1,68 +1,74 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.ttf');
+    src: url('../Roboto/Roboto-Regular.ttf');
  }
+main{
+    display: flex;
+    height: 800px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
 body{
-    background-image: url("LeafMed.jpg");
+    background-image: url("../Images/LeafMed.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-        /* Otros estilos para el cuerpo de la página */
+    font-family: Roboto;
     margin: 0;
     padding: 0;
-    font-family: Roboto;
-    /*background-color: green;*/
     height: 100vh;
 }
-
-.formulario{
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%,  -50%);
-    width: 800px;
-    height: 1000px;
-    background: #BBFF91;
-    border-radius: 10px;
+.inicio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(194, 251, 173);
+    height: 450px;
+    width: 500px;
+    padding: 30px;
+    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.inicio h1{
+    font-weight: normal;
+    font-size: 30px;
+    color: rgb(0, 66, 11);
 }
 
-.formulario h1{
-    text-align: center;
-    margin: 0;
-    padding: 300px 0 20px 0;
-    font-size: 45px;
-    font-family: Roboto;
-    color: rgb(25, 88, 35);
+.inicio p{
+    font-weight: normal;
+    font-size: 20px;
 }
 
-.formulario form{
-    padding: 10px 315px;
-    box-sizing: border-box;
+.logo{
+    height: 80%;
+    border-radius: 50%;
+    clip-path: inset(0 5px 0 5px);
 }
-label input {
-    font-family: Roboto;
+a {
+    text-decoration: none;
+    background-color: rgb(25, 88, 35);
+    padding: 2px 25px 2px 25px;
+    border-radius: 20px;
+    color: white;
+    border-style: solid;
+    border-color: rgb(50, 222, 67);
+    border-width: 2px;
 }
-
-main a {
-    font-family: Roboto;
-    font-size: 25px;
-    color:  rgb(255, 255, 255);
-    padding: 40px;
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
-
-div a {
-    font-family: Roboto;
-    color:  rgb(255, 255, 255);
-    margin: 0; 
-    position: absolute; 
-    top: 450px; 
-    left: 500px; 
-}
-div p{
-font-family: Roboto;
-    color:  rgb(255, 255, 255);
-    font-size: 25px;
-    margin: 0; 
-    position: absolute; 
-    top: 410px; 
-    left: 440px; 
+.info input{
+    border-radius: 30px;
+    background-color: 	rgb(130, 194, 136);
+    border-width: 0;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    padding-left: 10px;
+    color: black;
+    width: 100%;
 }
