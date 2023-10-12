@@ -1,0 +1,100 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf');
+ }
+
+body {
+    background-image: url('LeafMed.jpg');
+    background-size: cover; /* Esto hará que la imagen cubra todo el espacio disponible */
+    background-repeat: no-repeat; /* Esto evitará que la imagen se repita */
+    background-attachment: fixed; /* Esto hará que la imagen de fondo sea fija mientras se desplaza la página */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c7a2d;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+header a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+main.formulario {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C2FBAD; /* Color de fondo para la caja */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    margin: 20px auto; /* Margen superior e inferior y centrado horizontal */
+    max-width: 800px; /* Anchura máxima */
+    width: 90%; /* Utilizará el 90% del ancho disponible, pero no excederá los 800px */
+}
+
+h1, h3 {
+    color: #2c7a2d;
+    margin-top: 0;
+}
+
+p {
+    color: #555;
+    margin: 10px 0;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    width: 250px;
+    margin-right: 10px;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+a {
+    color: #2c7a2d;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #C2FBAD;
+    border-radius: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(194, 251, 173);
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: rgb(25, 88, 35);
+    text-decoration: none;
+    margin: 2px 30px;
+    display: inline-block;
+}
