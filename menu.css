@@ -1,91 +1,94 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.ttf');
- }
+    src: url('../Roboto/Roboto-Regular.ttf');
+}
 body{
-    background-image: url("LeafMed.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: Roboto;
     margin: 0;
     padding: 0;
-    font-family: Roboto;
     height: 100vh;
 }
-header {  
+header{
+    display: flex;
+    flex-direction: row;
     background-color: rgb(25, 88, 35);
-    padding: 30px;
-    text-align: right;
-    font-family: Roboto;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8% 0 1%;
+ }
+ 
+ header a {
+    margin: 0 8px 0 8px;
+ }
+ 
+ header h1{
+    font-size: 50px;
+    color: white;
+ }
+ 
+ header div{
+    display:flex;
+    height: 100%;
+    align-items: center;
+ }
+main{
+    background-image: url("../Images/LeafMed.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1500px;
+    margin: 0;
+ }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(194, 251, 173);
+    margin: 0;
 }
-    header a {
-        .miBotonEstilo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(194, 251, 173);
-            color: #000000;
-            border: 2px solid rgb(0, 0, 0);
-            padding: 10px 20px;
-            border-radius: 15px;
-            text-decoration: none; 
-            display: inline-block; 
-          }
-          
-          .miBotonEstilo:hover {
-            background-color: #0056b3; 
-          }
-    }
-    header h1 {
-        display: center;
-        justify-content: left;
-        align-items: center;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-family: Roboto;
-        text-align: left;
-    }
-    footer {
-        background-color: rgb(194, 251, 173);
-        color: #000000;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        width: 100%;
-        height: 200px;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
-     } 
-    
-    footer a {
-     color: rgb(25, 88, 35);
-     text-decoration: none;
-     margin: 2px 30px;
-     display: inline-block; 
-    }
-    footer h4 {
-        margin-bottom: 10px;
-     }
-     footer div {
-        text-align: center;
-        margin: 100; ; 
-     }
-     div a 
-        .miBotonEstilo {
-            background-color: rgb(255, 255, 255);
-            color: #000000;
-            border: 2px solid rgb(25, 88, 35);
-            padding: 10px 20px;
-            border-radius: 15px;
-            text-decoration: none; 
-            display: inline-block; 
-          }
-          
-          .miBotonEstilo:hover {
-            background-color: #0056b3; 
-          }
+.logo{
+    height: 90%;
+    border-radius: 50%;
+    margin: 0 0 0 10px;
+    clip-path: inset(0 5px 0 5px);
+ }
+ .recurso{
+    margin: 0 2% 0 2%;
+ }
  
+ .recurso p{
+    color:rgb(25, 88, 35)
+ }
  
+ a {
+    text-decoration: none;
+    background-color: rgb(25, 88, 35);
+    padding: 2px 25px 2px 25px;
+    border-radius: 20px;
+    color: white;
+    border-style: solid;
+    border-color: rgb(50, 222, 67);
+    border-width: 2px;
+ }
+ .text{
+    flex-direction: column;
+    background-color: rgb(194, 251, 173);
+    padding: 10px;
+    border-radius: 30px;
+    padding-bottom: 50px;
+    width:400px;
+    height: 300px;
+}
+.text h3{
+    font-weight: normal;
+    font-size: 18px;
+    color: rgb(0, 66, 11);
+}
+
+.text p{
+    font-weight: normal;
+    font-size: 15px;
+}
