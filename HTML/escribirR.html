@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="escribirR.css">
+    <link rel="stylesheet" href="../CSS/escribirR.css">
     <title>Tu Reseña | LeafMed</title>
 </head>
 <body>
     <header>
-        <a href="./registrarse.html">Registrarme</a>
-        <a href="./inicioSesion.html">Iniciar Sesion</a>
+        <div>
+            <h1>LeafMed</h1>
+            <img src="../Images/Logo.png" alt="Logo" class = "logo">
+        </div>
+        <nav>
+            <a href="./menu.html">Conocenos</a>
+            <a href="./registrarse.html">Registrarme</a>
+            <a href="./inicioSesion.html">Iniciar Sesion</a>
+        </nav>
     </header>
     <main class="formulario">
         <h1>Escribe tu Reseña</h1>
@@ -23,23 +30,23 @@
             <label for="reseña">
                 <textarea id="reseña" placeholder="Escribe texto aquí..." rows="5"></textarea>
             </label>            
-            <button>Publicar</button>
+            <a href="./reseñas.html">Publicar</a>
         </form>
     </main>
     <footer>
-        <div>
+        <div class = "recurso">
             <h4>Recursos</h4>
             <p>Soporte</p>
             <p>Feedback</p>
             <p>FAQ</p>
         </div>
-        <div>
+        <div class = "recurso">
             <h4>Politicas</h4>
             <p>Terminos y condiciones</p>
             <p>Privacidad</p>
             <p>Guias de uso</p>
         </div>
-        <div>
+        <div class = "recurso">
             <h4>Proyecto</h4>
             <p>Desarrolladores</p>
             <p>Tecnologias</p>

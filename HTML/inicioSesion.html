@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="inicioSesion.css">
+    <link rel="stylesheet" href="../CSS/inicioSesion.css">
     <title>Inicio Sesion | LeafMed</title>
 </head>
 <body>
     <main class="formulario">
-        <h1>Iniciar Sesion</h1>
-        <form method="post">
-            <label for="nombre">
-                <input type="text" id="nombre" placeholder="Nombre de usuario" required>
-            </label>
-            <label for="contraseña">
-                <input type="password" id="contraseña" placeholder="Contraseña" required>
-            </label>
-            <p>¿Olvidaste tu contraseña?</p>
-            <a href="./index.html">Ingresar</a>
-            <p>¿No tienes cuenta? Registrate!</p>
-            <a href="./Registrarse.html">Registrarse</a>
-        </form>
+        <div class ="inicio">
+            <h1>Iniciar Sesion</h1>
+            <form method="post" class = "info">
+                <label for="nombre">
+                    <input type="text" id="nombre" placeholder="Nombre de usuario" required>
+                </label>
+                <label for="contraseña">
+                    <input type="password" id="contraseña" placeholder="Contraseña" required>
+                </label>
+            </form>
+                <p>¿Olvidaste tu contraseña?</p>
+                <a href="./index.html">Ingresar</a>
+                <p>¿No tienes cuenta? Registrate!</p>
+                <a href="./registrarse.html">Registrarse</a>
+        </div>
     </main>
 </body>
 </html>
