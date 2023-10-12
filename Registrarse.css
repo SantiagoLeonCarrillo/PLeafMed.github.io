@@ -1,31 +1,27 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.ttf');
+    src: url('../Roboto/Roboto-Regular.ttf');
  }
 body{
-    background-image: url("LeafMed.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-        /* Otros estilos para el cuerpo de la página */
-    margin: 0;
-    padding: 0;
     font-family: Roboto;
-    /*background-color: green;*/
-    height: 100vh;
-}
+    background-image: url("../Images/LeafMed.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+ }
 
-.formulario{
+main{
     position: absolute;
     top: 50%;
     left: 80%;
     transform: translate(-50%,  -50%);
     width: 800px;
     height: 1000px;
-    background: #BBFF91;
+    background: rgb(194, 251, 173);
     border-radius: 10px;
 }
 
-.formulario h1{
+h1{
     text-align: center;
     margin: 0;
     padding: 300px 0 20px 0;
@@ -34,35 +30,42 @@ body{
     color: rgb(25, 88, 35);
 }
 
-.formulario form{
+form{
     padding: 10px 315px;
     box-sizing: border-box;
 }
-label input {
-    font-family: Roboto;
-}
-
-main a {
-    font-family: Roboto;
+    
+div p{
+    color:  rgb(255, 255, 255);
     font-size: 25px;
-    color:  rgb(255, 255, 255);
-    padding: 40px;
-}
-
-div a {
-    font-family: Roboto;
-    color:  rgb(255, 255, 255);
     margin: 0; 
     position: absolute; 
-    top: 450px; 
+    top: 390px; 
+    left: 460px; 
+}
+div a {
+    position: absolute; 
+    top: 430px; 
     left: 500px; 
 }
-div p{
-font-family: Roboto;
-    color:  rgb(255, 255, 255);
-    font-size: 25px;
-    margin: 0; 
-    position: absolute; 
-    top: 410px; 
-    left: 440px; 
+a {
+    text-decoration: none;
+    background-color: rgb(25, 88, 35);
+    padding: 2px 25px 2px 25px;
+    border-radius: 20px;
+    color: white;
+    border-style: solid;
+    border-color: rgb(50, 222, 67);
+    border-width: 2px;
+}
+
+input{
+    border-radius: 30px;
+    background-color: 	rgb(130, 194, 136);
+    border-width: 0;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    padding-left: 10px;
+    color: black;
+    width: 100%;
 }
