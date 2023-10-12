@@ -1,46 +1,81 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Index.css">
-    <title>LeafMed</title>
-</head>
-<body>
-    <header>
-        <div>
-            <h1>LeafMed</h1>
-            <img src="../Images/Logo.png" alt="Logo" class = "logo">
-        </div>
-        <nav>
-            <a href="./menu.html">Conocenos</a>
-            <a href="./registrarse.html">Registrarme</a>
-            <a href="./inicioSesion.html">Iniciar Sesion</a>
-        </nav>
-    </header>
-    <main>
-        <img src="../Images/Producto.png" alt="producto">
-        <img src="../Images/PanelProducto.jpeg" alt="nombre producto">
-    </main>
-    <footer>
-        <div class = "recurso">
-            <h4>Recursos</h4>
-            <p>Soporte</p>
-            <p>Feedback</p>
-            <p>FAQ</p>
-        </div>
-        <div class = "recurso">
-            <h4>Politicas</h4>
-            <p>Terminos y condiciones</p>
-            <p>Privacidad</p>
-            <p>Guias de uso</p>
-        </div>
-        <div class = "recurso">
-            <h4>Proyecto</h4>
-            <p>Desarrolladores</p>
-            <p>Tecnologias</p>
-            <p>Sobre nosotros</p>
-        </div>
-    </footer>
-</body>
-</html>
+@font-face {
+   font-family: 'Roboto';
+   src: url('../Roboto/Roboto-Regular.ttf');
+}
+header{
+   display: flex;
+   flex-direction: row;
+   background-color: rgb(25, 88, 35);
+   height: 70px;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 8% 0 1%;
+}
+
+header a {
+   margin: 0 8px 0 8px;
+}
+
+header h1{
+   font-size: 50px;
+   color: white;
+}
+
+header div{
+   display:flex;
+   height: 100%;
+   align-items: center;
+}
+main{
+   display: flex;
+   background-image: url("../Images/LeafMed.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 800px;
+   margin: 0;
+   justify-content: center;
+   align-items: center;
+}
+
+main img{
+   border-radius: 25px;
+}
+footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: rgb(194, 251, 173);
+   margin: 0;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.logo{
+   height: 90%;
+   border-radius: 50%;
+   margin: 0 0 0 10px;
+   clip-path: inset(0 5px 0 5px);
+}
+.recurso{
+   margin: 0 2% 0 2%;
+}
+
+.recurso p{
+   color:rgb(25, 88, 35)
+}
+
+a {
+   text-decoration: none;
+   background-color: rgb(25, 88, 35);
+   padding: 2px 25px 2px 25px;
+   border-radius: 20px;
+   color: white;
+   border-style: solid;
+   border-color: rgb(50, 222, 67);
+   border-width: 2px;
+}
