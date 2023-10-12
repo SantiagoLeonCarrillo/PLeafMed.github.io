@@ -1,83 +1,82 @@
 @font-face {
    font-family: 'Roboto';
-   src: url('Roboto-Regular.ttf');
+   src: url('../Roboto/Roboto-Regular.ttf');
 }
-main h1 {
-   color: rgb(255, 255, 255);
-   text-decoration: none;
-   font-family: Roboto;
-   text-align: center;
-}
-main a {
-   color: rgb(255, 255, 255);
-   text-decoration: none;
-   font-family: Roboto;
+header{
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
+   background-color: rgb(25, 88, 35);
+   height: 70px;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 8% 0 1%;
+}
+
+header a {
+   margin: 0 8px 0 8px;
+}
+
+header h1{
+   font-size: 50px;
+   color: white;
+}
+
+header div{
+   display:flex;
+   height: 100%;
+   align-items: center;
+}
+main{
+   display: flex;
+   background-image: url("../Images/LeafMed.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 800px;
+   margin: 0;
    justify-content: center;
    align-items: center;
-   height: 100vh;
+}
+
+main img{
+   border-radius: 25px;
+}
+footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: rgb(194, 251, 173);
+   margin: 0;
 }
 body{
-    background-image: url("LeafMed.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: Roboto;
     margin: 0;
     padding: 0;
     height: 100vh;
 }
-header {
+.logo{
+   height: 90%;
+   border-radius: 50%;
+   margin: 0 0 0 10px;
+   clip-path: inset(0 5px 0 5px);
+}
+.recurso{
+   margin: 0 2% 0 2%;
+}
+
+.recurso p{
+   color:rgb(25, 88, 35)
+}
+
+a {
+   text-decoration: none;
    background-color: rgb(25, 88, 35);
-   padding: 30px;
-   text-align: center;
-   font-family: Roboto;
-} 
-header a {
-   color: rgb(255, 255, 255);
-   text-decoration: none;
-   .miBotonEstilo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(194, 251, 173);
-      color: #000000;
-      border: 2px solid rgb(0, 0, 0);
-      padding: 10px 20px;
-      border-radius: 15px;
-      text-decoration: none; /* Evita el subrayado de enlaces */
-      display: inline-block; /* Para que el enlace tome solo el espacio necesario */
-    }
-    
-    .miBotonEstilo:hover {
-      background-color: #0056b3; /* Cambia el color de fondo cuando se coloca el cursor sobre el botón */
-    }
-}  
-footer {
-      background-color: rgb(194, 251, 173);
-      color: #000000;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      height: 200px;
-      bottom: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Roboto;
-   } 
-  /* Ajusta el estilo de los títulos del footer */
-  footer a {
-   color: rgb(25, 88, 35);
-   text-decoration: none;
-   margin: 2px 30px;
-   display: inline-block; /* Muestra los enlaces en línea */
-  }
-  footer h4 {
-      margin-bottom: 10px;
-   }
-   footer div {
-      text-align: center;
-      margin: 100; ; /* Agrega margen derecho para espaciar los bloques */
-   }
+   padding: 2px 25px 2px 25px;
+   border-radius: 20px;
+   color: white;
+   border-style: solid;
+   border-color: rgb(50, 222, 67);
+   border-width: 2px;
+}
+
