@@ -1,10 +1,34 @@
-
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.ttf');
+    src: url('../Roboto/Roboto-Regular.ttf');
+ }
+ header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(25, 88, 35);
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8% 0 1%;
+ }
+ 
+ header a {
+    margin: 0 8px 0 8px;
+ }
+ 
+ header h1{
+    font-size: 50px;
+    color: white;
+ }
+ 
+ header div{
+    display:flex;
+    height: 100%;
+    align-items: center;
  }
 
 body {
+    font-family: Arial, sans-serif;
     background-image: url('LeafMed.jpg');
     background-size: cover;
     background-position: center;
@@ -17,33 +41,28 @@ body {
     flex-direction: column;
     height: 100vh;
 }
-
-header {
-    background-color: rgba(44, 122, 45, 0.8);
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 20px;
-}
-
-header a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-}
-
-main.formulario {
+main {
     flex: 1; /* Para ocupar todo el espacio disponible */
     background-color: #C2FBAD;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 20px;
 }
 
+.form-child{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 textarea {
+    background-color: #316637;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -67,15 +86,14 @@ label {
     width: 100%;
 }
 
-input[type="text"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-top: 5px;
-    width: 100%;
-    margin-right: 10px;
-    flex-grow: 1;
-    box-sizing: border-box;
+input{
+    border-radius: 30px;
+    background-color: 	rgb(130, 194, 136);
+    border-width: 0;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    padding-left: 10px;
+    color: black;
 }
 
 button {
@@ -91,34 +109,42 @@ button {
 button:hover {
     background-color: #1f5820;
 }
-
-footer {
-    background-color: rgb(194, 251, 173);
-    color: #000000;
-    text-align: center;
-    padding: 10px;
+footer{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    background-color: rgb(194, 251, 173);
+    margin: 0;
 }
-
-footer h4 {
-    color: #2c7a2d;
-    font-size: 1.2em;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer div {
-    flex: 1;
-    padding: 10px;
-}
-
-footer a {
-    color: rgb(25, 88, 35);
+body{
+    background-image: url("../Images/LeafMed.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Roboto;
+    margin: 0;
+    height: 100vh;
+ }
+ .logo{
+    height: 90%;
+    border-radius: 50%;
+    margin: 0 0 0 10px;
+    clip-path: inset(0 5px 0 5px);
+ }
+ .recurso{
+    margin: 0 2% 0 2%;
+ }
+ 
+ .recurso p{
+    color:rgb(25, 88, 35)
+ }
+ 
+ a {
     text-decoration: none;
-    margin: 2px 30px;
-    display: inline-block;
-}
+    background-color: rgb(25, 88, 35);
+    padding: 2px 25px 2px 25px;
+    border-radius: 20px;
+    color: white;
+    border-style: solid;
+    border-color: rgb(50, 222, 67);
+    border-width: 2px;
+ }
