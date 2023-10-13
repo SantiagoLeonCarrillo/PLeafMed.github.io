@@ -21,12 +21,14 @@
     <main class="formulario">
         <h1>Escribe tu Reseña</h1>
         <form method="post">
-            <label for="nombre">
-                <input type="text" id="nombre" placeholder="Nombre">
-            </label>
-            <label for="Apellido">
-                <input type="text" id="apellido" placeholder="Apellido">
-            </label>
+            <div class = "form-child">
+                <label for="nombre">
+                    <input type="text" id="nombre" placeholder="Nombre"  required>
+                </label>
+                <label for="apellido">
+                    <input type="text" id="apellido" placeholder="Apellido"  required>
+                </label>
+            </div>
             <label for="reseña">
                 <textarea id="reseña" placeholder="Escribe texto aquí..." rows="5"></textarea>
             </label>            
