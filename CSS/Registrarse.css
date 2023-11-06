@@ -1,75 +1,74 @@
-/* Tus estilos actuales de escritorio */
-
 @font-face {
     font-family: 'Roboto';
     src: url('../Roboto/Roboto-Regular.ttf');
 }
 
-body {
-    font-family: Roboto, sans-serif;
+body{
+    font-family: Roboto;
     background-image: url("../Images/LeafMed.jpg");
-    background-size: cover;
-    background-position: center;
+    background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover;
     margin: 0;
 }
 
-main {
+main{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 80%;
+    transform: translate(-50%,  -50%);
     width: 800px;
     height: 1000px;
     background: rgb(194, 251, 173);
     border-radius: 10px;
 }
 
-h1 {
+h1{
     text-align: center;
     margin: 0;
     padding: 300px 0 20px 0;
     font-size: 45px;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto;
     color: rgb(25, 88, 35);
 }
 
-form {
+form{
     padding: 10px 315px;
     box-sizing: border-box;
 }
-
-div p {
-    color: white;
+    
+div p{
+    color:  rgb(255, 255, 255);
     font-size: 25px;
-    margin: 0;
-    position: absolute;
-    top: 390px;
-    left: 460px;
+    margin: 0; 
+    position: absolute; 
+    top: 390px; 
+    left: 460px; 
 }
 
 div a {
-    position: absolute;
-    top: 430px;
-    left: 500px;
+    position: absolute; 
+    top: 430px; 
+    left: 500px; 
 }
-
 a {
     text-decoration: none;
     background-color: rgb(25, 88, 35);
-    padding: 2px 25px;
+    padding: 2px 25px 2px 25px;
     border-radius: 20px;
     color: white;
-    border: 2px solid rgb(50, 222, 67);
+    border-style: solid;
+    border-color: rgb(50, 222, 67);
+    border-width: 2px;
 }
 
-input {
+input{
     border-radius: 30px;
-    background-color: rgb(130, 194, 136);
-    border: none;
-    margin: 10px 0;
-    padding: 5px 10px;
+    background-color: 	rgb(130, 194, 136);
+    border-width: 0;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    padding-left: 10px;
     color: black;
     width: 100%;
 }
