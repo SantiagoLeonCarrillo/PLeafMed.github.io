@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-image: url("../Images/LeafMed.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +14,7 @@ body {
 main {
     position: absolute;
     top: 50%;
-    left: 80%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 800px;
     height: 1000px;
@@ -27,7 +27,6 @@ h1 {
     margin: 0;
     padding: 300px 0 20px 0;
     font-size: 45px;
-    font-family: Roboto;
     color: rgb(25, 88, 35);
 }
 
@@ -35,106 +34,80 @@ form {
     padding: 10px 315px;
     box-sizing: border-box;
 }
-    
+
 div p {
     color: white;
     font-size: 25px;
     margin: 0;
     position: absolute;
     top: 390px;
-    left: 460px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 div a {
     position: absolute;
     top: 430px;
-    left: 500px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 a {
     text-decoration: none;
     background-color: rgb(25, 88, 35);
-    padding: 2px 25px 2px 25px;
+    padding: 2px 25px;
     border-radius: 20px;
     color: white;
-    border-style: solid;
-    border-color: rgb(50, 222, 67);
-    border-width: 2px;
+    border: 2px solid rgb(50, 222, 67);
 }
 
 input {
     border-radius: 30px;
-    background-color: 	rgb(130, 194, 136);
-    border-width: 0;
-    margin: 10px 0px 10px 0px;
-    padding: 5px;
-    padding-left: 10px;
+    background-color: rgb(130, 194, 136);
+    border: none;
+    margin: 10px 0;
+    padding: 5px 10px;
     color: black;
     width: 100%;
 }
 
-/* Media query para tablets */
+/* Media Queries */
 @media (max-width: 768px) {
     main {
-        width: 90%; /* Ocupa el 90% de la pantalla */
-        height: auto; /* Altura automática */
+        width: 90%;
+        height: auto;
         padding: 20px;
-        top: 5%; /* Distancia desde el top más pequeña */
-        left: 5%;
-        transform: translate(0, 0); /* Se ajusta ya que el ancho es relativo */
     }
 
     h1 {
-        font-size: 6vw; /* Tamaño de fuente más pequeño y relativo */
-        padding: 10px 0; /* Padding más pequeño */
+        font-size: 6vw;
+        padding-top: 50px; /* Reduce el espacio superior */
     }
 
     form {
-        padding: 0 5%; /* Padding más pequeño a los lados */
-    }
-    
-    div p, div a {
-        font-size: 4vw; /* Tamaño de fuente relativo al ancho de la pantalla */
-        left: 10%; /* Ajuste para centrar */
-        top: auto; /* Posición automática */
-        bottom: 10%; /* Distancia desde el fondo */
-        transform: translateX(-50%); /* Centrar horizontalmente */
+        padding: 10px; /* Reduce el padding */
     }
 
-    a {
-        width: 80%; /* Ancho relativo a su contenedor */
-        margin: 0 auto; /* Centrado horizontalmente */
+    div p, div a {
+        top: initial; /* Reset the top value */
+        bottom: 10%; /* Distance from the bottom */
+        left: initial; /* Reset the left value */
+        right: initial; /* Reset the right value */
+        transform: translate(-50%, 0);
     }
 }
 
-/* Media query para teléfonos móviles */
 @media (max-width: 480px) {
-    main {
-        width: 100%; /* Ocupa el 100% de la pantalla */
-        top: 0; /* Sin distancia desde el top */
-        left: 0; /* Sin distancia desde la izquierda */
-        border-radius: 0; /* Sin bordes redondeados */
-    }
-
     h1 {
-        font-size: 5vw; /* Tamaño de fuente aún más pequeño */
-        padding: 5% 0; /* Padding proporcional */
+        font-size: 5vw;
+        padding-top: 30px; /* Further reduce the space */
     }
 
     form {
-        padding: 0 3%; /* Padding aún más pequeño */
-    }
-    
-    div p, div a {
-        font-size: 5vw; /* Tamaño de fuente relativo al ancho de la pantalla */
-        left: 50%; /* Ajuste para centrar */
-        top: auto; /* Posición automática */
-        bottom: 15%; /* Distancia desde el fondo */
-        transform: translateX(-50%); /* Centrar horizontalmente */
+        padding: 10px 5%; /* Further reduce the padding */
     }
 
-    a {
-        width: 80%; /* Ancho relativo a su contenedor */
-        margin: 0 auto; /* Centrado horizontalmente */
+    div p, div a {
+        font-size: 4vw; /* Adjust font size for smaller screens */
     }
 }
