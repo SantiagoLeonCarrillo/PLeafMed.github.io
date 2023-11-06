@@ -1,27 +1,28 @@
 @font-face {
     font-family: 'Roboto';
     src: url('../Roboto/Roboto-Regular.ttf');
- }
-body{
-    font-family: Roboto;
+}
+
+body {
+    font-family: Roboto, sans-serif;
     background-image: url("../Images/LeafMed.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
- }
+}
 
-main{
+main {
     position: absolute;
     top: 50%;
     left: 80%;
-    transform: translate(-50%,  -50%);
+    transform: translate(-50%, -50%);
     width: 800px;
     height: 1000px;
     background: rgb(194, 251, 173);
     border-radius: 10px;
 }
 
-h1{
+h1 {
     text-align: center;
     margin: 0;
     padding: 300px 0 20px 0;
@@ -30,24 +31,26 @@ h1{
     color: rgb(25, 88, 35);
 }
 
-form{
+form {
     padding: 10px 315px;
     box-sizing: border-box;
 }
     
-div p{
-    color:  rgb(255, 255, 255);
+div p {
+    color: white;
     font-size: 25px;
-    margin: 0; 
-    position: absolute; 
-    top: 390px; 
-    left: 460px; 
+    margin: 0;
+    position: absolute;
+    top: 390px;
+    left: 460px;
 }
+
 div a {
-    position: absolute; 
-    top: 430px; 
-    left: 500px; 
+    position: absolute;
+    top: 430px;
+    left: 500px;
 }
+
 a {
     text-decoration: none;
     background-color: rgb(25, 88, 35);
@@ -59,7 +62,7 @@ a {
     border-width: 2px;
 }
 
-input{
+input {
     border-radius: 30px;
     background-color: 	rgb(130, 194, 136);
     border-width: 0;
@@ -68,4 +71,70 @@ input{
     padding-left: 10px;
     color: black;
     width: 100%;
+}
+
+/* Media query para tablets */
+@media (max-width: 768px) {
+    main {
+        width: 90%; /* Ocupa el 90% de la pantalla */
+        height: auto; /* Altura automática */
+        padding: 20px;
+        top: 5%; /* Distancia desde el top más pequeña */
+        left: 5%;
+        transform: translate(0, 0); /* Se ajusta ya que el ancho es relativo */
+    }
+
+    h1 {
+        font-size: 6vw; /* Tamaño de fuente más pequeño y relativo */
+        padding: 10px 0; /* Padding más pequeño */
+    }
+
+    form {
+        padding: 0 5%; /* Padding más pequeño a los lados */
+    }
+    
+    div p, div a {
+        font-size: 4vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+        left: 10%; /* Ajuste para centrar */
+        top: auto; /* Posición automática */
+        bottom: 10%; /* Distancia desde el fondo */
+        transform: translateX(-50%); /* Centrar horizontalmente */
+    }
+
+    a {
+        width: 80%; /* Ancho relativo a su contenedor */
+        margin: 0 auto; /* Centrado horizontalmente */
+    }
+}
+
+/* Media query para teléfonos móviles */
+@media (max-width: 480px) {
+    main {
+        width: 100%; /* Ocupa el 100% de la pantalla */
+        top: 0; /* Sin distancia desde el top */
+        left: 0; /* Sin distancia desde la izquierda */
+        border-radius: 0; /* Sin bordes redondeados */
+    }
+
+    h1 {
+        font-size: 5vw; /* Tamaño de fuente aún más pequeño */
+        padding: 5% 0; /* Padding proporcional */
+    }
+
+    form {
+        padding: 0 3%; /* Padding aún más pequeño */
+    }
+    
+    div p, div a {
+        font-size: 5vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+        left: 50%; /* Ajuste para centrar */
+        top: auto; /* Posición automática */
+        bottom: 15%; /* Distancia desde el fondo */
+        transform: translateX(-50%); /* Centrar horizontalmente */
+    }
+
+    a {
+        width: 80%; /* Ancho relativo a su contenedor */
+        margin: 0 auto; /* Centrado horizontalmente */
+    }
 }
