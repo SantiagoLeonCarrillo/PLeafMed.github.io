@@ -76,6 +76,7 @@ input{
 @media screen and (max-width: 768px) {
     /* Ajustes del fondo */
     body {
+        background-size: 100% 100%;
         background-attachment: scroll; /* Puede ser necesario para evitar problemas en algunos dispositivos móviles */
     }
 
