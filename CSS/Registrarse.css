@@ -4,60 +4,69 @@
 }
 
 body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     background-image: url("../Images/LeafMed.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
-    padding: 0;
-    height: 100vh; /* Asegura que el body tome el alto completo de la ventana gráfica */
 }
 
 main {
-    display: flex;
-    justify-content: center; /* Centra el contenido principal horizontalmente */
-    align-items: center; /* Centra el contenido principal verticalmente */
-    height: 800px; /* Altura establecida para main, podrías querer hacer esto más flexible */
-    margin: 0 auto; /* Centra main en el documento */
-}
-
-.inicio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px; /* Fijo para móviles y escritorio */
+    height: 1000px; /* Fijo para móviles y escritorio */
+    background: rgb(194, 251, 173);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(194, 251, 173);
-    border-radius: 10px; /* Mantiene el borde redondeado del diseño original */
-    padding: 30px;
-    width: 800px; /* Anchura fija, considera hacerlo más adaptable si es necesario */
-    height: 1000px; /* Altura fija del main, considera hacerlo más adaptable */
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
 }
 
-.inicio h1, .inicio p {
-    text-align: center; /* Centra el texto en h1 y p */
-    color: rgb(25, 88, 35); /* Color del texto para h1 y p */
+form {
+    width: 100%; /* Asegura que el form use todo el ancho de main */
 }
 
-/* Puedes agregar clases específicas para h1 y p si necesitan ser estilizados diferentemente */
+h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 45px;
+    color: rgb(25, 88, 35);
+}
+
+input {
+    border-radius: 30px;
+    background-color: rgb(130, 194, 136);
+    border: none;
+    margin: 10px 0;
+    padding: 15px;
+    color: black;
+    width: 60%; /* Ancho fijo */
+    max-width: 500px; /* Ancho máximo para no desbordarse en dispositivos más anchos */
+}
+
+div p, div a {
+    text-align: center; /* Centrado sin posicionamiento absoluto */
+    color: white;
+}
+
+div {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
 
 a {
     text-decoration: none;
     background-color: rgb(25, 88, 35);
-    padding: 2px 25px;
+    padding: 10px 25px;
     border-radius: 20px;
     color: white;
     border: 2px solid rgb(50, 222, 67);
-    margin: 10px 0; /* Asegura algo de espacio alrededor de los enlaces */
+    display: inline-block; /* Para que funcione el padding y el margin */
+    margin-top: 10px;
 }
-
-.info input {
-    border-radius: 30px;
-    background-color: rgb(130, 194, 136);
-    border: none;
-    padding: 5px 10px;
-    color: black;
-    width: calc(100% - 20px); /* Ajusta el ancho para tener en cuenta el padding */
-    box-sizing: border-box; /* Asegura que el padding no añada al ancho total */
-}
-
-/* Asegúrate de adaptar cualquier otro elemento específico del diseño original */
