@@ -71,3 +71,42 @@ input{
     color: black;
     width: 100%;
 }
+/* Tus estilos actuales se aplicarán para dispositivos de escritorio y grandes por defecto */
+
+/* Media Queries para ajustes específicos de móviles */
+@media screen and (max-width: 768px) { /* Puede que necesites ajustar este valor según tus necesidades */
+    
+    /* Ajusta el main para que no use posición absoluta y sea más adaptable */
+    main {
+        position: static; /* o podrías usar 'relative' si necesitas usar top/right/bottom/left */
+        transform: none;
+        width: 90%; /* Toma el 90% del ancho de la pantalla */
+        margin: 20px auto; /* Esto centrará tu formulario en la pantalla con margen arriba y abajo */
+        height: auto; /* Altura automática para contener todo tu contenido */
+    }
+
+    /* Asegúrate de que el h1 no tenga un padding demasiado grande */
+    h1 {
+        padding: 20px 0;
+        font-size: 2em; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    }
+
+    /* Ajustes en el formulario para un mejor padding */
+    form {
+        padding: 10px; /* Menos padding en dispositivos móviles */
+    }
+    
+    /* Los inputs ya están configurados bien para móviles ya que toman el 100% del ancho disponible */
+    
+    /* Ajustar la posición del texto y el enlace de iniciar sesión */
+    div p, div a {
+        position: static; /* Quita la posición absoluta */
+        margin: 10px 0;
+        text-align: center; /* Centra el texto y el enlace en dispositivos móviles */
+        left: auto; /* Restablece la propiedad left */
+        top: auto; /* Restablece la propiedad top */
+    }
+
+    /* Los estilos de a no necesitan ajuste, ya que son bastante responsivos */
+}
+
