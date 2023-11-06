@@ -3,121 +3,61 @@
     src: url('../Roboto/Roboto-Regular.ttf');
 }
 
-body{
+body {
     font-family: Roboto;
     background-image: url("../Images/LeafMed.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el body tome el alto completo de la ventana gráfica */
 }
 
-main{
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%,  -50%);
-    width: 800px;
-    height: 1000px;
-    background: rgb(194, 251, 173);
-    border-radius: 10px;
+main {
+    display: flex;
+    justify-content: center; /* Centra el contenido principal horizontalmente */
+    align-items: center; /* Centra el contenido principal verticalmente */
+    height: 800px; /* Altura establecida para main, podrías querer hacer esto más flexible */
+    margin: 0 auto; /* Centra main en el documento */
 }
 
-h1{
-    text-align: center;
-    margin: 0;
-    padding: 300px 0 20px 0;
-    font-size: 45px;
-    font-family: Roboto;
-    color: rgb(25, 88, 35);
+.inicio {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(194, 251, 173);
+    border-radius: 10px; /* Mantiene el borde redondeado del diseño original */
+    padding: 30px;
+    width: 800px; /* Anchura fija, considera hacerlo más adaptable si es necesario */
+    height: 1000px; /* Altura fija del main, considera hacerlo más adaptable */
+    justify-content: space-around;
+    align-items: center;
 }
 
-form{
-    padding: 10px 315px;
-    box-sizing: border-box;
-}
-    
-div p{
-    color:  rgb(255, 255, 255);
-    font-size: 25px;
-    margin: 0; 
-    position: absolute; 
-    top: 390px; 
-    left: 460px; 
+.inicio h1, .inicio p {
+    text-align: center; /* Centra el texto en h1 y p */
+    color: rgb(25, 88, 35); /* Color del texto para h1 y p */
 }
 
-div a {
-    position: absolute; 
-    top: 430px; 
-    left: 500px; 
-}
+/* Puedes agregar clases específicas para h1 y p si necesitan ser estilizados diferentemente */
+
 a {
     text-decoration: none;
     background-color: rgb(25, 88, 35);
-    padding: 2px 25px 2px 25px;
+    padding: 2px 25px;
     border-radius: 20px;
     color: white;
-    border-style: solid;
-    border-color: rgb(50, 222, 67);
-    border-width: 2px;
+    border: 2px solid rgb(50, 222, 67);
+    margin: 10px 0; /* Asegura algo de espacio alrededor de los enlaces */
 }
 
-input{
+.info input {
     border-radius: 30px;
-    background-color: 	rgb(130, 194, 136);
-    border-width: 0;
-    margin: 10px 0px 10px 0px;
-    padding: 5px;
-    padding-left: 10px;
+    background-color: rgb(130, 194, 136);
+    border: none;
+    padding: 5px 10px;
     color: black;
-    width: 100%;
-}
-/* Media queries para adaptación móvil */
-@media (max-width: 768px) {
-    main {
-        left: 50%; /* Centrado horizontal */
-        width: 95%; /* Ancho más adecuado para tablets */
-        height: auto; /* Altura automática */
-        padding: 20px; /* Relleno para no tocar los bordes */
-    }
-
-    h1 {
-        padding: 50px 0 20px 0; /* Relleno superior más pequeño */
-        font-size: 36px; /* Tamaño de fuente reducido */
-    }
-
-    form {
-        padding: 0 20px; /* Relleno lateral ajustado */
-    }
-
-    div p {
-        top: initial;
-        bottom: 120px; /* Posición desde abajo para mantenerlo en la vista */
-        left: 50%;
-        transform: translate(-50%, 0);
-        font-size: 20px; /* Tamaño de fuente reducido */
-    }
-
-    div a {
-        bottom: 70px; /* Posición desde abajo */
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
-    input {
-        padding: 5px; /* Relleno ajustado */
-    }
+    width: calc(100% - 20px); /* Ajusta el ancho para tener en cuenta el padding */
+    box-sizing: border-box; /* Asegura que el padding no añada al ancho total */
 }
 
-@media (max-width: 480px) {
-    main {
-        width: 90%; /* Ancho más adecuado para móviles */
-    }
-
-    h1 {
-        font-size: 28px; /* Tamaño de fuente más pequeño para móviles */
-    }
-
-    div p, div a {
-        font-size: 18px; /* Tamaño de fuente más pequeño para enlaces */
-    }
-}
+/* Asegúrate de adaptar cualquier otro elemento específico del diseño original */
