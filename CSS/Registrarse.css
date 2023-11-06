@@ -1,112 +1,124 @@
+/* Tus estilos actuales de escritorio */
+
 @font-face {
     font-family: 'Roboto';
     src: url('../Roboto/Roboto-Regular.ttf');
 }
 
-body{
-    font-family: Roboto;
+body {
+    font-family: Roboto, sans-serif;
     background-image: url("../Images/LeafMed.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
 }
 
-main{
+main {
     position: absolute;
     top: 50%;
-    left: 80%;
-    transform: translate(-50%,  -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 800px;
     height: 1000px;
     background: rgb(194, 251, 173);
     border-radius: 10px;
 }
 
-h1{
+h1 {
     text-align: center;
     margin: 0;
     padding: 300px 0 20px 0;
     font-size: 45px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: rgb(25, 88, 35);
 }
 
-form{
+form {
     padding: 10px 315px;
     box-sizing: border-box;
 }
-    
-div p{
-    color:  rgb(255, 255, 255);
+
+div p {
+    color: white;
     font-size: 25px;
-    margin: 0; 
-    position: absolute; 
-    top: 390px; 
-    left: 460px; 
+    margin: 0;
+    position: absolute;
+    top: 390px;
+    left: 460px;
 }
 
 div a {
-    position: absolute; 
-    top: 430px; 
-    left: 500px; 
+    position: absolute;
+    top: 430px;
+    left: 500px;
 }
+
 a {
     text-decoration: none;
     background-color: rgb(25, 88, 35);
-    padding: 2px 25px 2px 25px;
+    padding: 2px 25px;
     border-radius: 20px;
     color: white;
-    border-style: solid;
-    border-color: rgb(50, 222, 67);
-    border-width: 2px;
+    border: 2px solid rgb(50, 222, 67);
 }
 
-input{
+input {
     border-radius: 30px;
-    background-color: 	rgb(130, 194, 136);
-    border-width: 0;
-    margin: 10px 0px 10px 0px;
-    padding: 5px;
-    padding-left: 10px;
+    background-color: rgb(130, 194, 136);
+    border: none;
+    margin: 10px 0;
+    padding: 5px 10px;
     color: black;
     width: 100%;
 }
-/* Tus estilos actuales se aplicarán para dispositivos de escritorio y grandes por defecto */
 
 /* Media Queries para ajustes específicos de móviles */
-@media screen and (max-width: 768px) { /* Puede que necesites ajustar este valor según tus necesidades */
-    
-    /* Ajusta el main para que no use posición absoluta y sea más adaptable */
-    main {
-        position: static; /* o podrías usar 'relative' si necesitas usar top/right/bottom/left */
-        transform: none;
-        width: 90%; /* Toma el 90% del ancho de la pantalla */
-        margin: 20px auto; /* Esto centrará tu formulario en la pantalla con margen arriba y abajo */
-        height: auto; /* Altura automática para contener todo tu contenido */
+@media screen and (max-width: 768px) {
+    /* Ajustes del fondo */
+    body {
+        background-attachment: scroll; /* Puede ser necesario para evitar problemas en algunos dispositivos móviles */
     }
 
-    /* Asegúrate de que el h1 no tenga un padding demasiado grande */
+    /* Ajustes del contenedor principal */
+    main {
+        position: static;
+        transform: none;
+        width: 90%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    /* Ajustes de los títulos y texto */
     h1 {
         padding: 20px 0;
-        font-size: 2em; /* Tamaño de fuente más pequeño para dispositivos móviles */
+        font-size: 2em;
     }
 
-    /* Ajustes en el formulario para un mejor padding */
+    /* Ajustes del formulario */
     form {
-        padding: 10px; /* Menos padding en dispositivos móviles */
+        padding: 10px;
     }
     
-    /* Los inputs ya están configurados bien para móviles ya que toman el 100% del ancho disponible */
+    /* Ajustes de los inputs para que no se desborden del contenedor */
+    input {
+        width: calc(100% - 20px); /* Restar el padding total */
+        box-sizing: border-box;
+    }
     
-    /* Ajustar la posición del texto y el enlace de iniciar sesión */
+    /* Ajustes para el texto y el enlace de iniciar sesión */
     div p, div a {
-        position: static; /* Quita la posición absoluta */
+        position: static;
         margin: 10px 0;
-        text-align: center; /* Centra el texto y el enlace en dispositivos móviles */
-        left: auto; /* Restablece la propiedad left */
-        top: auto; /* Restablece la propiedad top */
+        text-align: center;
+        left: auto;
+        top: auto;
     }
 
-    /* Los estilos de a no necesitan ajuste, ya que son bastante responsivos */
+    /* Asegúrate de que el enlace "Iniciar sesión" sea un bloque y esté centrado */
+    div a {
+        display: block;
+        margin: 10px auto;
+    }
 }
-
