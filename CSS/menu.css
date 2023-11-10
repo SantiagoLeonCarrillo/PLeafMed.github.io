@@ -1,102 +1,217 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('../Roboto/Roboto-Regular.ttf');
-}
-body{
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Roboto;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-}
-header{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(25, 88, 35);
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8% 0 1%;
- }
- 
- header a {
-    margin: 0 8px 0 8px;
- }
- 
- header h1{
-    font-size: 50px;
-    color: white;
- }
- 
- header div{
-    display:flex;
-    height: 100%;
-    align-items: center;
- }
 main{
+   height: 1920px;
+}
+main section{
+   width:100%;
+   height: 25%;
    display: flex;
-   flex-direction: column;
-   background-image: url("../Images/LeafMed.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 1500px;
-   margin: 0;
-   align-items: center;
+   background-image: linear-gradient(rgb(25, 88, 35) 4%, rgba(25, 88, 35, 0) 14%);
 }
-
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(194, 251, 173);
-    margin: 0;
-}
-.logo{
-    height: 90%;
-    border-radius: 50%;
-    margin: 0 0 0 10px;
-    clip-path: inset(0 5px 0 5px);
- }
- .recurso{
-    margin: 0 2% 0 2%;
- }
- 
- .recurso p{
-    color:rgb(25, 88, 35)
- }
- 
- a {
-    text-decoration: none;
-    background-color: rgb(25, 88, 35);
-    padding: 2px 25px 2px 25px;
-    border-radius: 20px;
-    color: white;
-    border-style: solid;
-    border-color: rgb(50, 222, 67);
-    border-width: 2px;
- }
-.text{
-   background-color: rgb(194, 251, 173);
-   padding: 10px;
-   border-radius: 30px;
-   padding-bottom: 50px;
-   width:400px;
-   height: 300px;
-}
-.text h3{
+main h3{
     font-weight: normal;
-    font-size: 18px;
+    font-size: 24px;
     color: rgb(0, 66, 11);
 }
-
-.text p{
+main p{
     font-weight: normal;
-    font-size: 15px;
+    font-size: 17px;
 }
-.right{
-   align-self: flex-end;
+#first-section{
+   background: url("../Images/menu1.jpg");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+}
+#second-section{
+   background: url("../Images/menu2.jpeg");
+   background-size: 100% 100%;
+}
+#third-section{
+   background: url("../Images/menu3.jpeg");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+}
+.text{
+   background-image: linear-gradient(rgb(25, 88, 35) 4%, rgb(194, 251, 173) 14%);
+   padding: 10px;
+   width:80%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.image{
+   width: 20%;
+   height: 100%;
+   background-image: linear-gradient(rgb(25, 88, 35) 4%, rgba(25, 88, 35, 0) 14%);
+}
+#first-section .image{
+   background:none;
+}
+#first-section .text{
+   background: none;
+   background-color: rgb(194, 251, 173);
 }
 .left{
-   align-self: flex-start;
+   flex-direction: row-reverse;
+}
+.left article{
+   width: 100%;
+   padding-left: 0;
+}
+.left p{
+   text-align: right;
+}
+.left h3{
+   text-align: right;
+}
+.right{
+   justify-content: end;
+}
+.right article{
+   width: 100%;
+   padding-right: 0;
+}
+#last-section{
+   padding: 10% 0;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+}
+#last-section p{
+   text-align: center;
+   color: white;
+}
+#last-section h3{
+   text-align: center;
+   color: white;
+   font-weight:bolder;
+}
+#last-section img{
+   width: 150px;
+   height: 300px;
+}
+
+@media (min-width:480px) {
+   main {
+      height: 2000px;
+   }
+   main h3{
+      font-size: 25px;
+   }
+   main p{
+      font-size: 18px;
+   }
+   .left article{
+      padding-left: 5%;
+   }
+   .right article{
+      padding-right: 5%;
+   }
+   .text{
+      width:63%;
+   }
+   .image{
+      width: 37%;
+   }
+}
+
+@media (min-width:725px) {
+   main {
+      height: 3200px;
+   }
+   #last-section img{
+      width: 200px;
+      height: 400px;
+   }
+   main h3{
+      font-size: 32px;
+   }
+   main p{
+      font-size: 25px;
+   }
+   #first-section{
+      background-size: 30% 100%;
+      background-repeat: no-repeat;
+   }
+   #second-section{
+      background-size: 60% 100%;
+   }
+   #third-section{
+      background-size: 30% 100%;
+      background-repeat: no-repeat;
+   }
+   .text{
+      width:70%;
+      padding: 20px;
+   }
+   .image{
+      width: 30%;
+   }
+   .left article{
+      padding-left: 15%;
+   }
+   .right article{
+      padding-right: 15%;
+   }
+   main a{
+      font-size: 20px;
+      margin: 0 10px;
+   }
+}
+
+@media (min-width:1000px) {
+   main {
+      height: 3600px;
+   }
+   main h3{
+      font-size: 34px;
+   }
+   main p{
+      font-size: 27px;
+   }
+   .left article{
+      padding-left: 30%;
+   }
+   .right article{
+      padding-right: 30%;
+   }
+}
+
+@media (min-width:1500px) {
+   main {
+      height: 4800px;
+   }
+   main h3{
+      font-size: 40px;
+   }
+   main p{
+      font-size: 30px;
+   }
+   #first-section{
+      background-size: 45% 100%;
+      background-repeat: no-repeat;
+   }
+   #second-section{
+      background-size: 55% 100%;
+   }
+   #third-section{
+      background-size: 45% 100%;
+      background-repeat: no-repeat;
+   }
+   .text{
+      width:55%;
+   }
+   .image{
+      width: 45%;
+   }
+   .left article{
+      padding-left: 40%;
+   }
+   .right article{
+      padding-right: 40%;
+   }
+   main a{
+      font-size: 25px;
+      margin: 0 20px;
+   }
 }
