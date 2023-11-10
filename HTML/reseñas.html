@@ -3,47 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Basic/general.css">
+    <link rel="stylesheet" href="../CSS/Basic/header-footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../CSS/reseñas.css">
     <title>Reseñas | LeafMed</title>
 </head>
 <body>
     <header>
-        <div>
-            <h1>LeafMed</h1>
-            <img src="../Images/Logo.png" alt="Logo" class = "logo">
-        </div>
         <nav>
-            <a href="./menu.html">Conocenos</a>
-            <a href="./registrarse.html">Registrarme</a>
-            <a href="./inicioSesion.html">Iniciar Sesion</a>
+            <input type="checkbox" id="menu">
+            <label for="menu" class="menu-btn"><i class="material-symbols-outlined menu-btn">menu</i></label>
+            <a href="../index.html" id = "a-logo">
+                <div>
+                    <h1>LeafMed</h1>
+                    <img src="../Images/Logo.png" alt="Logo" id = "logo">
+                </div>
+            </a>
+            <ul>
+                <li><a href="./menu.html">Conocenos</a></li>
+                <li><a href="./registrarse.html">Registrarme</a></li>
+                <li><a href="./inicioSesion.html">Iniciar Sesion</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div class ="escritura">
+        <section id="inicio">
             <p>Reseñas de usuarios</p>
             <a href="./escribirR.html">+</a>
-        </div>
-        <div class="container">
+        </section>
+        <section class="container">
             <figure>
                 <img src="../Images/user.jpg">
                 <h3>Ana Lopez</h3>
             </figure>
             <p>Estoy encantada con mi experiencia utilizando el Jardinero Interactivo de LeafMed. Como alguien que es nueva en la jardinería, me ha brindado la tranquilidad de saber que mis plantas están recibiendo el cuidado adecuado. Los consejos personalizados son realmente útiles y me han convertido en una jardinera más segura. ¡Recomiendo este producto a todos los amantes de las plantas!</p>
-        </div>
-        <div class="container">
+        </section>
+        <section class="container">
             <figure>
                 <img src="../Images/user.jpg">
                 <h3>Carlos Martinez</h3>
             </figure>
             <p>El Jardinero Interactivo de LeafMed ha sido una adición increíble a mi rutina de cuidado de plantas. La facilidad con la que puedo monitorear la humedad y la luz en tiempo real ha hecho que mi vida sea mucho más sencilla. Como aficionado a la jardinería, me ha brindado información valiosa que ha mejorado significativamente la salud de mis plantas.</p>
-         </div>
-        <div class="container">
+         </section>
+        <section class="container">
             <figure>
                 <img src="../Images/user.jpg">
                 <h3>Laura Garcia</h3>
             </figure>
             <p>No puedo creer lo que el Jardinero Interactivo de LeafMed ha hecho por mis plantas. Como alguien que siempre ha luchado por mantener mis plantas con vida, este producto ha sido un salvavidas. La función de alertas me ha ayudado a evitar problemas antes de que empeoren. Incluso si eres un jardinero experimentado, este dispositivo te sorprenderá con su utilidad.</p>
-        </div>
+        </section>
+        <section>
+            <a href="#">v</a>
+        </section>
     </main>
     <footer>
         <div class = "recurso">
