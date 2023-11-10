@@ -1,0 +1,110 @@
+main{
+    flex-direction: column;
+    height: 968px;
+}
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32%;
+    width: 100%;
+}
+main article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 300px 0;
+}
+main h1{
+    color: rgb(0, 66, 11);
+    font-size: 25px;
+}
+main div{
+    width: 70%;
+}
+main label{
+    width: 100%;
+}
+main input{
+    border-radius: 30px;
+    background-color: 	rgb(130, 194, 136);
+    border-width: 0;
+    margin: 10px 0;
+    padding: 5px;
+    padding-left: 10px;
+    color: black;
+    width: 100%;
+}
+main p{
+    color: white;
+    font-size: 20px;
+}
+#registro{
+    background-color: rgb(194, 251, 173);
+}
+
+@media (min-width:480px) {
+    main {
+       height: 1100px;
+    }
+    main h1{
+        font-size: 30px;
+    }
+    main div{
+        width: 50%;
+    }
+ }
+
+@media (min-width:769px) {
+    main {
+       height: 1200px;
+       flex-direction: row;
+    }
+    main section{
+        height: 100%;
+    }
+    main h1{
+        font-size: 60px;
+    }
+    main div{
+        width: 90%;
+    }
+    main article{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        padding: 450px 0;
+    }
+    #registro{
+        width: 70%;
+    }
+    #cuenta{
+        width: 30%;
+    }
+}
+
+@media (min-width:1080px) {
+    main {
+       height: 1400px;
+    }
+    main article{
+        padding: 550px 0;
+    }
+    main form{
+        padding: 400px 0;
+    }
+ }
