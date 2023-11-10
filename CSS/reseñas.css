@@ -1,75 +1,7 @@
-@font-face {
-   font-family: 'Roboto';
-   src: url('../Roboto/Roboto-Regular.ttf');
-}
-header{
+main {
+   height: 2200px;
    display: flex;
-   flex-direction: row;
-   background-color: rgb(25, 88, 35);
-   height: 70px;
-   justify-content: space-between;
    align-items: center;
-   padding: 0 8% 0 1%;
-}
- 
-header a {
-   margin: 0 8px 0 8px;
-}
- 
-header h1{
-   font-size: 50px;
-   color: white;
-}
- 
-header div{
-   display:flex;
-   height: 100%;
-   align-items: center;
-}
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(194, 251, 173);
-    margin: 0;
-}
-body{
-   font-family: Roboto;
-   margin: 0;
-   height: 100vh;
-}
-.logo{
-    height: 90%;
-    border-radius: 50%;
-    margin: 0 0 0 10px;
-    clip-path: inset(0 5px 0 5px);
-}
-.recurso{
-    margin: 0 2% 0 2%;
-}
- 
-.recurso p{
-    color:rgb(25, 88, 35)
-}
- 
-a {
-   text-decoration: none;
-   background-color: rgb(25, 88, 35);
-   padding: 2px 25px 2px 25px;
-   border-radius: 20px;
-   color: white;
-   border-style: solid;
-   border-color: rgb(50, 222, 67);
-   border-width: 2px;
-}
-/*Pasar desde aqui a github*/
-main{
-   display: flex;
-   flex-direction: column;
-   background-image: url("../Images/LeafMed.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 1150px;
 }
 main a{
    padding: 3px 8px;
@@ -79,33 +11,81 @@ main img{
    height: 80px;
    border-radius: 100px;
 }
-.escritura{
+#inicio{
    display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin: 0 300px;
 }
-.escritura p{
+#inicio p{
    color: white;
    font-size: 20px;
+   margin: 0 10px;
+}
+main h3{
+   font-size: 24px;
+}
+
+main p{
+   font-size: 20px;
+}
+#inicio a{
+   margin: 0 10px;
 }
 .container{
    background-color: rgb(194, 251, 173);
    margin: 20px 0;
    padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 .container figure{
    display: flex;
    align-items: center;
+   width: 100%;
+   justify-content: flex-start;
+
 }
 .container figure h3{
-   display: flex;
-   align-items: center;
    margin: 0 10px;
 }
 .container p{
    background-color: #85B473;
    padding: 30px;
-   margin: 0 400px;
+   margin: 0 5%;
    border-radius: 30px;
+}
+
+@media (min-width:480px) {
+   main {
+      height: 1700px;
+   }
+   .container p{
+      margin: 0 10%;
+   }
+}
+
+@media (min-width:769px) {
+   main {
+      height: 1800px;
+   }
+   main h3{
+       font-size: 26px;
+   }
+   main p{
+       font-size: 24px;
+   }
+   .container p{
+      margin: 0 20%;
+   }
+}
+
+@media (min-width:1080px) {
+   main {
+      height: 1600px;
+   }
+   main h3{
+      font-size: 30px;
+   }
+  main p{
+      font-size: 27px;
+  }
 }
