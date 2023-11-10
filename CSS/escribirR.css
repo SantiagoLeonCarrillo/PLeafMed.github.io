@@ -30,12 +30,14 @@ main label{
     justify-content: center;
 }
 textarea {
-    background-color: rgb(25, 88, 35);
+    background-color: rgb(45, 139, 60);
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-top: 5px;
     width: 95%;
+    height: 300px;
+    resize: vertical; 
 }
 
 h1 {
@@ -74,6 +76,9 @@ input{
     }
     input{
         width: 300px;
+    }
+    textarea{
+        height: 500px;
     }
 }
  
