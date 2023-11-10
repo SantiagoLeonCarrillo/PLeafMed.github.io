@@ -1,0 +1,209 @@
+main{
+    height: 5000px;
+}
+main article{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+main div{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(194, 251, 173);
+    border-radius: 30px;
+    padding: 50px;
+}
+main h3{
+    font-weight: normal;
+    font-size: 24px;
+    color: rgb(0, 66, 11);
+}
+main h4{
+    font-weight: normal;
+    font-size: 24px;
+}
+main p{
+    font-weight: normal;
+    font-size: 20px;
+}
+main li{
+    list-style:disc;
+    font-size: 30px;
+}
+#first-background{
+    height: 60%;
+    background: url("../Images/fondo-descripcion.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#second-background{
+    height: 40%;
+}
+#first-container{
+    background-image: linear-gradient(rgb(194, 251, 173) 70%,rgba(194, 251, 173,0) 100%);
+    height: 16%;
+    padding-bottom: 100px;
+}
+#first-container div{
+    background: none;
+}
+#second-container{
+    height: 29%;
+}
+#second-container img{
+    display: none;
+}
+#second-container div{
+    width: 90%;
+}
+#third-container{
+    height: 23%;
+}
+#fourth-container{
+    height: 23%;
+    padding: 0 18%;
+}
+#fourth-container figure{
+    display: none;
+}
+#fifth-container{
+    background-image: linear-gradient(rgba(194, 251, 173,0) 5%, rgb(194, 251, 173) 30%);
+    height: 9%;
+}
+#fifth-container div{
+    background: none;
+}
+#producto{
+    height: 80%;
+}
+#bluetooth{
+    height: 40%;
+}
+#nProducto{
+    display: none;
+    border-radius: 30px;
+}
+/*Segunda parte*/
+#second-background img{
+    display: none;
+    width: 30%;
+}
+#first-end{
+    height: 45%;
+}
+#second-end{
+    height: 45%;
+}
+#end-btn{
+    height: 10%;
+}
+@media (min-width:480px) {
+    main {
+       height: 3300px;
+    }
+}
+ @media (min-width:725px) {
+    main {
+       height: 4000px;
+    }
+    main h3{
+        font-size: 28px;
+    }
+    main p{
+        font-size: 22px;
+    }
+    main h4{
+        font-size: 25px;
+    }
+    main li{
+        list-style:disc;
+        font-size: 25px;
+    }
+    main a{
+        font-size: 25px;
+    }
+    #third-container div{
+        padding: 0 10%;
+        width: 80%;
+    }
+    #fourth-container figure{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    #producto{
+        max-height: 100%;
+        height: auto;
+        width: 50%;
+    }
+    #bluetooth{
+        max-height: 100%;
+        height: auto;
+        width: 50%;
+    }
+    #second-container img{
+        display: block;
+        width: 50%;
+    }
+    #second-container div{
+        width: 50%;
+    }
+    #second-background img{
+        display: block;
+    }
+}
+@media (min-width:1000px) {
+    main {
+        height: 4500px;
+    }
+    #nProducto{
+        display: block;
+        width: 50%;
+    }
+    main h3{
+        font-size: 32px;
+    }
+    main p{
+        font-size: 25px;
+    }
+    main h4{
+        font-size: 28px;
+    }
+}
+@media (min-width:1320px){ 
+    #second-container img{
+        width: 700px;
+    }
+    #producto{
+        height: 600px;
+        width: auto;
+    }
+    #bluetooth{
+        height: 200px;
+        width: auto;
+    }
+    #nProducto{
+        width: 800px;
+    }
+    #second-background img{
+        height: 70%;
+        width: auto;
+    }
+    main h3{
+        font-size: 38px;
+    }
+    main p{
+        font-size: 30px;
+    }
+    main h4{
+        font-size: 36px;
+    }
+    #second-background article div{
+        width: 1400px;
+    }
+}
