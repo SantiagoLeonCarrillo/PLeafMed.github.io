@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../Roboto/Roboto-Regular.ttf');
+}
+
+*{
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+
+    background-color: rgb(25, 88, 35);
+    padding: 2px 25px 2px 25px;
+    border-radius: 20px;
+    color: white;
+    border-style: solid;
+    border-color: rgb(50, 222, 67);
+    border-width: 2px;
+}
+
+a:hover{
+    background-color: rgb(66, 112, 74);
+    transition: .2s;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../Images/LeafMed.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
