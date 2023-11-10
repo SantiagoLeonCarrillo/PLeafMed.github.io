@@ -159,7 +159,7 @@ main li{
 }
 @media (min-width:1000px) {
     main {
-        height: 4500px;
+        height: 5000px;
     }
     #nProducto{
         display: block;
