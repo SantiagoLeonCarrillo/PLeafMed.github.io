@@ -1,81 +1,53 @@
-@font-face {
-   font-family: 'Roboto';
-   src: url('../Roboto/Roboto-Regular.ttf');
-}
-header{
-   display: flex;
-   flex-direction: row;
-   background-color: rgb(25, 88, 35);
-   height: 70px;
-   justify-content: space-between;
-   align-items: center;
-   padding: 0 8% 0 1%;
-}
-
-header a {
-   margin: 0 8px 0 8px;
-}
-
-header h1{
-   font-size: 50px;
-   color: white;
-}
-
-header div{
-   display:flex;
-   height: 100%;
-   align-items: center;
-}
-main{
-   display: flex;
-   background-image: url("../Images/LeafMed.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 800px;
-   margin: 0;
-   justify-content: center;
-   align-items: center;
-}
-
 main img{
    border-radius: 25px;
+   margin: 30px;
 }
-footer{
+main {
    display: flex;
    flex-direction: row;
+   align-items: center;
    justify-content: center;
-   background-color: rgb(194, 251, 173);
-   margin: 0;
+   height: 768px;
 }
-body{
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Roboto;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-}
-.logo{
-   height: 90%;
-   border-radius: 50%;
-   margin: 0 0 0 10px;
-   clip-path: inset(0 5px 0 5px);
-}
-.recurso{
-   margin: 0 2% 0 2%;
+#img-producto{
+   width: 40%;
 }
 
-.recurso p{
-   color:rgb(25, 88, 35)
+#img-nombre{
+   display: none;
+   width: 40%;
 }
 
-a {
-   text-decoration: none;
-   background-color: rgb(25, 88, 35);
-   padding: 2px 25px 2px 25px;
-   border-radius: 20px;
-   color: white;
-   border-style: solid;
-   border-color: rgb(50, 222, 67);
-   border-width: 2px;
+@media (min-width:481px) {
+   main {
+      height: 900px;
+   }
+   #img-producto{
+      width: 30%;
+   }
+}
+
+@media (min-width:769px) {
+   main {
+      height: 1000px;
+   }
+   #img-nombre{
+      display:block;
+   }
+   #img-producto{
+      width: 20%;
+   }
+}
+
+@media (min-width:1080px) {
+   main {
+      height: 1200px;
+   }
+   #img-producto{
+      width: 216px;
+   }
+   
+   #img-nombre{
+      width: 432px;
+   }
 }
