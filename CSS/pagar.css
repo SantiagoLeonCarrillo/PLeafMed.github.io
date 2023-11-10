@@ -1,101 +1,48 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('../Roboto/Roboto-Regular.ttf');
- }
-
-body{
-    margin: 0;
-    font-family: Roboto;
-}
-header{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(25, 88, 35);
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8% 0 1%;
- }
- 
- header a {
-    margin: 0 8px 0 8px;
- }
- 
- header h1{
-    font-size: 50px;
-    color: white;
- }
- 
- header div{
-    display:flex;
-    height: 100%;
-    align-items: center;
- }
-
-main{
-    display: flex;
-    background-image: url("../Images/LeafMed.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    margin: 0;
+main {
     justify-content: center;
     align-items: center;
-}
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(194, 251, 173);
-    margin: 0;
+    height: 768px;
 }
 
-.pay{
+main section{
     display: flex;
     flex-direction: column;
     background-color: rgb(194, 251, 173);
     height: 700px;
-    width: 600px;
+    width: 90%;
     padding: 10px;
     border-radius: 30px;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 50px;
 }
-.pay h3{
+main h3{
     font-weight: normal;
-    font-size: 25px;
+    font-size: 22px;
     color: rgb(0, 66, 11);
+    text-align: center;
 }
 
-.pay p{
+main p{
     font-weight: normal;
-    font-size: 25px;
-}
-
-.logo{
-    height: 80%;
-    border-radius: 50%;
-    clip-path: inset(0 5px 0 5px);
+    font-size: 20px;
+    text-align: center;
 }
 
 .info{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.info-child{
-    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
-#nombre{
-    margin-right: 5px;
+.info-child{
+    width: 90%;
 }
 
-#apellido{
-    margin-left: 5px;
+.info-child input{
+    width: 100%;
 }
 
 #pseImg{
@@ -117,7 +64,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 55%;
+    width: 100%;
+    margin: 0 30%;
 }
 
 .mPago input{
@@ -164,21 +112,51 @@ footer{
     display: flex;
     align-items: center;
 }
-.recurso{
-    margin: 0 2% 0 2%;
+
+@media (min-width:480px) {
+    main {
+       height: 900px;
+    }
+    main section{
+        width: 80%;
+    }
+ }
+
+@media (min-width:600px) {
+    main section{
+        width: 500px;
+    }
+
+    .nickname{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nickname label{
+        width: 49%;
+    }
 }
 
-.recurso p{
-    color:rgb(25, 88, 35)
-}
+@media (min-width:769px) {
+    main {
+       height: 1000px;
+    }
 
-a {
-    text-decoration: none;
-    background-color: rgb(25, 88, 35);
-    padding: 2px 25px 2px 25px;
-    border-radius: 20px;
-    color: white;
-    border-style: solid;
-    border-color: rgb(50, 222, 67);
-    border-width: 2px;
-}
+    main h3{
+        font-size: 26px;
+    }
+    
+    main p{
+        font-size: 24px;
+    }
+ }
+
+@media (min-width:1080px) {
+    main {
+       height: 1500px;
+    }
+
+    main section{
+        width: 600px;
+    }
+ }
