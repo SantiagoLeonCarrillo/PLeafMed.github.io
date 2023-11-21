@@ -2,7 +2,7 @@
     "videos": [
         {
             "title": "Mi Video",
-            "url": "...Recursos/video.mp4"
+            "url": ".../Recursos/video.mp4"
         }
     ]
 }
