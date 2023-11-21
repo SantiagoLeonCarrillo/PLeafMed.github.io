@@ -35,6 +35,29 @@ main li{
     list-style:disc;
     font-size: 30px;
 }
+.video-wrapper {
+    position: relative;
+    width: 1024px; /* Igual al ancho del video */
+    height: 576px; /* Igual al alto del video */
+}
+#myVideo {
+    width: 100%;
+    height: 100%;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+}
+.play-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
 #first-background{
     height: 60%;
     background: url("../Images/fondo-descripcion.jpeg");
