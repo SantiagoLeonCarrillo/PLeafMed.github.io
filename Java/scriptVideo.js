@@ -1,4 +1,4 @@
-fetch('video.json')
+fetch(https://santiagoleoncarrillo.github.io/PLeafMed.github.io/Java/video.json)
     .then(response => response.json())
     .then(data => {
         const videoData = data.videos[0]; 
